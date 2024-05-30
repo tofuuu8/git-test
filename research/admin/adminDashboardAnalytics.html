@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="adminCSS/adminDashboardAnalytics.css">
+    <title>Document</title>
+</head>
+<style>
+    .top-header-left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+        font-size: 20px;
+        padding: 10px 0 10px 5px;
+    }
+    .top-header-left .adminlogo{
+        background: black;
+        color: white;
+        border-radius: 50px;
+        border: 1px;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .header-left .chatsupport-settings-logout{
+        position: absolute;
+        bottom: 10px;
+        line-height: 25px;
+        left: 3%;
+    }
+    .header-left .chatsupport-settings-logout a{
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+    }
+</style>
+<body>  
+    <div class="body">
+        <div class="header-left" id="header-left">
+
+            <div class="top-header-left">
+                <div class="adminlogo">
+                    <i class="fa-solid fa-user" id="adminlogo"></i>
+                    <label for="adminlogo">Admin</label>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="navigation" id="navigation">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                </div>
+            </div>
+           
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h1>Print My Shirt</h1>
+            </div>
+            <div class="dashboard" id="dashboard">
+                <input type="checkbox" name="check1" id="check1">
+                <label for="check1">
+                    <h1 id="h1">Dashboard</h1>
+                </label>
+                <div class="dashboard-content">
+                    <a href="adminDashboard.html">Overview</a>
+                    <a href="adminDashboardProducts.php">Products</a>
+                    <p id="analytics">Analytics</p>
+                    <a href="adminDashboardSales.html">Sales</a>
+                </div>
+            </div>
+        
+            <div class="Queues" id="Queues">
+                <input type="checkbox" name="check2" id="check2">
+                <label for="check2">
+                    <h1 id="h2"><a href="adminQueues.html" id="sana">Queues</a></h1>
+                </label>
+                <div class="Queues-content">
+                    <p>Orders</p>
+                </div>
+            </div>
+            
+            <div class="userProfile" id="userProfile">
+                <input type="checkbox" name="check3" id="check3">
+                <label for="check3">
+                    <h1 id="h3"><a href="adminUserprofile.php">User Profiles</a></h1>
+                </label>
+                <div class="userProfile-content">
+                    <p>Accounts</p>
+                </div>
+            </div>
+            
+            <div class="transactions" id="transactions">
+                <input type="checkbox" name="check4" id="check4">
+                <label for="check4">
+                    <h1 id="h4"><a href="adminActivities.php">Transactions</a></h1>
+                </label>
+                <div class="transactions-content">
+                    <p>Mode of payment </p>
+                    <p>History</p>
+                </div>
+            </div>
+        
+            <div class="chatsupport-settings-logout">
+                <div class="chatSupport">
+                    <a href="">Chat Support Settings</a>
+                </div>
+
+                <div class="settings">
+                    <a href="">Settings</a>
+                </div>
+                <div class="logout">
+                    <a href="logout.php">Logout</a>
+                </div>
+            </div>
+
+
+        </div>
+        
+            <div class="content" id="content">
+
+                <div class="dashboardAnalytics" id="dashboardAnalytics">
+                        <div class="dashboardAnalytics-content" id="dashboardAnalytics-content">
+                            <h1>Dashboard</h1>
+                            <p>Dashboard <span>></span> Analytics</p>
+                        </div>
+                </div>    
+                   
+            </div>
+
+    </div>
+
+</body>
+<style>
+    
+</style>
+</html>

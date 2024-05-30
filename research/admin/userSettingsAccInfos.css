@@ -1,0 +1,713 @@
+    .body{
+        width: 100%;
+        height: calc(100vh - 65px);
+        display: flex;
+    }
+    .body .settings{
+        background: #E16C69;
+        width: 20%;
+        height: calc(100vh - 65px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body .settings h1{
+        color: white;
+        font-weight: 400;
+        font-size: 40px;
+        margin: 15px 0;
+        letter-spacing: 1px;
+    }
+    .body .settings .settingsContent{
+        width: 100%;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body .settings .settingsContent p{
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: .3s;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .body .settings .settingsContent p a:hover{
+        color: black;
+    }
+    .body .settings .settingsContent #active{
+        color: black;
+        background: #FF807D;
+    }
+    .body .settings .settingsContent p a{
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .body .helpSupport{
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+    }
+    .body .helpSupport a{
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 19px;
+    }
+
+    .body .account-information{
+        width: 80%;
+        height: 100%;
+    }
+    
+    .body .account-information .account-information-header{
+        display: flex;
+        align-items: center;
+        height: 90px;
+        justify-content: center;
+    }
+    .body .account-information .account-information-header h1{
+        background: #eeeceb;
+        font-size: 45px;
+        padding: 8px 0;
+        border-radius: 50px;
+        width: 80%;
+        text-align: center;
+    }
+
+                                                 /* CHANGE USERNAME */
+
+    .body .account-information .account-information-label1{
+       display: flex;
+       height: 60px;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       margin-top: 50px;
+    }
+    .body .account-information .account-information-label1 .username-edit{
+       width: 80%;
+       border-top: 1px solid black;
+       border-bottom: 1px solid black;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+     
+    .body .account-information .account-information-label1 .username-edit label{
+        font-size: 25px;
+        letter-spacing: 1px;
+
+    }
+   
+    .body .account-information .account-information-label1 .username-edit input{
+        width:300px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .body .account-information .account-information-label1 .username-edit button{
+        font-size: 19px;
+        padding: 7px 50px;
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #FF807D;
+        color: white;
+    } 
+    .body .account-information .account-information-label1 .username-center{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .body .account-information .account-information-label1 .username-center span{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .body .account-information .account-information-label1 .username-center.show-username-center{
+        display: flex;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box{
+        width: 500px;
+        height: auto;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        background: #943331;
+        color: white;
+        padding: 5px;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .current-username{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .current-username label{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .current-username input{
+        font-size: 20px;
+        border: none;
+        background: none;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .inputs{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .inputs label{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .inputs input{
+        font-size: 18px;
+        padding: 3px 6px;
+        outline:none;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .btn{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .body .account-information .account-information-label1 .username-center .username-box .btn button{
+        font-size: 18px;
+        padding: 8px 45px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        background: #FF807D;
+        cursor: pointer;
+    }
+
+                                                      /* CHANGE NAME */
+
+
+    .body .account-information .account-information-label2{
+       display: flex;
+       height: 60px;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+    }
+    .body .account-information .account-information-label2 .name-edit{
+       width: 80%;
+       border-bottom: 1px solid black;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+     
+    .body .account-information .account-information-label2 .name-edit label{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+   
+    .body .account-information .account-information-label2 .name-edit input{
+        width:300px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .body .account-information .account-information-label2 .name-edit button{
+        font-size: 19px;
+        padding: 7px 50px;
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #FF807D;
+        color: white;
+    } 
+    .body .account-information .account-information-label2 .name-center{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .body .account-information .account-information-label2 .name-center span{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .body .account-information .account-information-label2 .name-center.show-name-center{
+        display: flex;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box{
+        width: 500px;
+        height: auto;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        background: #943331;
+        color: white;
+        padding: 5px;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .current-name{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .current-name label{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .current-name input{
+        font-size: 20px;
+        border: none;
+        background: none;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .inputs{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .inputs label{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .inputs input{
+        font-size: 18px;
+        padding: 3px 6px;
+        outline:none;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .btn{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .body .account-information .account-information-label2 .name-center .name-box .btn button{
+        font-size: 18px;
+        padding: 8px 45px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        background: #FF807D;
+        cursor: pointer;
+    }
+
+                                                   /* CHANGE EMAIL */
+
+
+    .body .account-information .account-information-label3{
+       display: flex;
+       height: 60px;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+    }
+    .body .account-information .account-information-label3 .email-edit{
+       width: 80%;
+       border-bottom: 1px solid black;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+     
+    .body .account-information .account-information-label3 .email-edit label{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+   
+    .body .account-information .account-information-label3 .email-edit input{
+        width:300px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .body .account-information .account-information-label3 .email-edit button{
+        font-size: 19px;
+        padding: 7px 50px;
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #FF807D;
+        color: white;
+    } 
+    .body .account-information .account-information-label3 .email-center{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .body .account-information .account-information-label3 .email-center span{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .body .account-information .account-information-label3 .email-center.show-email-center{
+        display: flex;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box{
+        width: 500px;
+        height: auto;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        background: #943331;
+        color: white;
+        padding: 5px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .current-email{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .current-email label{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .current-email input{
+        font-size: 20px;
+        border: none;
+        background: none;
+        width: 320px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .inputs{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .inputs label{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .inputs input{
+        font-size: 18px;
+        padding: 3px 6px;
+        outline:none;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .btn{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .body .account-information .account-information-label3 .email-center .email-box .btn button{
+        font-size: 18px;
+        padding: 8px 45px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        background: #FF807D;
+        cursor: pointer;
+    }
+
+                                                /* CHANGE PHONE NUMBER */
+
+    .body .account-information .account-information-label4{
+       display: flex;
+       height: 60px;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+    }
+    .body .account-information .account-information-label4 .phone-edit{
+       width: 80%;
+       border-bottom: 1px solid black;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+     
+    .body .account-information .account-information-label4 .phone-edit label{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+   
+    .body .account-information .account-information-label4 .phone-edit input{
+        width:300px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .body .account-information .account-information-label4 .phone-edit button{
+        font-size: 19px;
+        padding: 7px 50px;
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #FF807D;
+        color: white;
+    } 
+    .body .account-information .account-information-label4 .phone-center{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .body .account-information .account-information-label4 .phone-center span{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .body .account-information .account-information-label4 .phone-center.show-phone-center{
+        display: flex;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box{
+        width: 500px;
+        height: auto;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        background: #943331;
+        color: white;
+        padding: 5px;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .current-number{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .current-number label{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .current-number input{
+        font-size: 20px;
+        border: none;
+        width: 200px;
+        background: none;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .inputs{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .inputs label{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .inputs input{
+        font-size: 18px;
+        padding: 3px 6px;
+        outline:none;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .btn{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .body .account-information .account-information-label4 .phone-center .phone-box .btn button{
+        font-size: 18px;
+        padding: 8px 45px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        background: #FF807D;
+        cursor: pointer;
+    }
+
+                                                    /* CHANGE PASSWORD */
+
+    .body .account-information .account-information-label5{
+       display: flex;
+       height: 60px;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+    }
+    .body .account-information .account-information-label5 .password-edit{
+       width: 80%;
+       border-bottom: 1px solid black;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+     
+    .body .account-information .account-information-label5 .password-edit label{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+   
+    .body .account-information .account-information-label5 .password-edit input{
+        width:300px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .body .account-information .account-information-label5 .password-edit button{
+        font-size: 19px;
+        padding: 7px 50px;
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #FF807D;
+        color: white;
+    } 
+    .body .account-information .account-information-label5 .password-center{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .body .account-information .account-information-label5 .password-center span{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .body .account-information .account-information-label5 .password-center.show-password-center{
+        display: flex;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box{
+        width: 500px;
+        height: auto;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        background: #943331;
+        color: white;
+        padding: 5px;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .current-password{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .current-password label{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .current-password input{
+        font-size: 20px;
+        border: none;
+        width: 200px;
+        background: none;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .inputs{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .inputs label{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .inputs input{
+        font-size: 18px;
+        padding: 3px 6px;
+        outline:none;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .btn{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .body .account-information .account-information-label5 .password-center .password-box .btn button{
+        font-size: 18px;
+        padding: 8px 45px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        letter-spacing: 1px;
+        background: #FF807D;
+        cursor: pointer;
+    }

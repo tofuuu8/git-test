@@ -1,0 +1,270 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.body{
+    display: flex;
+    width: 100%;
+}
+
+                                                            /* LEFT WEBSITE */
+ 
+.header-left{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 15%;
+    background: #E16C69;
+    color: white;
+    overflow: hidden;
+    color: black;
+    height: 100vh;
+}
+.header-left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.header-left .logo img{
+    width: 70px;
+}
+.header-left .logo h1{
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.header-left .dashboard{
+    margin-bottom: 8px;
+}
+.header-left .dashboard label{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.header-left .dashboard label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .dashboard label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .dashboard label h1:hover{
+    background-color: #FF807D;
+}
+.header-left .dashboard .dashboard-content{
+    width: 100%;
+    position: relative;
+    margin-left: 10px;
+    display: none;
+}
+.header-left .dashboard .dashboard-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .dashboard .dashboard-content p:hover{
+    background: #FF807D;
+}
+.dashboard #check1:checked ~ .dashboard-content{
+    display: none;
+}
+#check0, #check1, #check2, #check3, #check4{
+    display: none;
+}
+
+.header-left .Queues{
+    margin-bottom: 8px;
+}
+
+.header-left .Queues label{
+    display: flex;
+    align-items: center;
+}
+.header-left .Queues label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+    font-size: 27px;
+}
+.header-left .Queues label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .Queues label h1:hover{
+    background: #FF807D;
+}
+.header-left .Queues .Queues-content{
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+}
+.header-left .Queues .Queues-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .Queues .Queues-content p:hover{
+    background: #FF807D;
+}
+.Queues #check2:checked ~ .Queues-content{
+    display: block;
+}
+
+.header-left .userProfile{
+    margin-bottom: 8px;
+}
+.header-left .userProfile label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .userProfile label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .userProfile label{
+    display: flex;
+    align-items: center;
+}
+.header-left .userProfile label h1:hover{
+    background: #FF807D;
+}
+.header-left .userProfile .userProfile-content{
+    width: 100%;
+    position: relative;
+    margin-left: 10px;
+}
+.header-left .userProfile .userProfile-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .userProfile .userProfile-content p:hover{
+    background: #FF807D;
+}
+.userProfile #check3:checked ~ .userProfile-content{
+    display: none;
+}
+
+.header-left .transactions{
+    margin-bottom: 20px;
+}
+.header-left .transactions label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .transactions label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .transactions label{
+    display: flex;
+    align-items: center;
+}
+.header-left .transactions label h1:hover{
+    background: #FF807D;
+}
+.header-left .transactions .transactions-content{
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+}
+.header-left .transactions .transactions-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .transactions .transactions-content p:hover{
+    background: #FF807D;
+}
+.transactions #check4:checked ~ .transactions-content{
+    display: block;
+}
+
+
+
+
+                                                        /* CONTENT */
+
+.header{
+    width: 85%;
+}                                                        
+
+.userProfiles{
+    height: 100%;
+    position: relative;
+}
+.userProfiles-content{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding-left: 50px;
+    background: #FF807D;
+}
+.userProfiles-content h1 {
+    font-weight: 400;
+}
+.userProfiles-content p{
+    margin-left: 1.8px;
+}
+.userProfiles-content span{
+    color: white;
+}
+table{
+    margin-top: 15px;
+}
+table, th, td{
+    text-align:center;
+    border: 1px solid black;
+}
+table{
+    padding: 6px;
+}
+th, td{
+    padding: 8px;
+}
+table td a{
+    text-decoration: none;
+    background: blue;
+    padding: 0 14px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+}
