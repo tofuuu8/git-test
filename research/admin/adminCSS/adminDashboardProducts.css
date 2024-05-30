@@ -1,0 +1,397 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.body{
+    display: flex;
+    width: 100%;
+}
+
+                                                            /* LEFT WEBSITE */
+ 
+.header-left{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 15%;
+    background: #E16C69;
+    overflow: hidden;
+    color: black;
+    transition: .5s ease-out;
+    height: 100vh;
+}
+.header-left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.header-left .logo img{
+    width: 70px;
+}
+.header-left .logo h1{
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.header-left .dashboard{
+    margin-bottom: 8px;
+}
+.header-left .dashboard label{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.header-left .dashboard label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .dashboard label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .dashboard label h1:hover{
+    background-color: #FF807D;
+}
+.header-left .dashboard .dashboard-content{
+    width: 100%;
+    position: relative;
+    margin-left: 10px;
+}
+.header-left .dashboard .dashboard-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .dashboard .dashboard-content a{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.header-left .dashboard .dashboard-content p:hover{
+    background: #FF807D;
+}
+.header-left .dashboard .dashboard-content a:hover{
+    background: #FF807D;
+}
+.dashboard #check1:checked ~ .dashboard-content{
+    display: none;
+}
+#check0, #check1, #check2, #check3, #check4{
+    display: none;
+}
+
+.header-left .Queues{
+    margin-bottom: 8px;
+}
+
+.header-left .Queues label{
+    display: flex;
+    align-items: center;
+}
+.header-left .Queues label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .Queues label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .Queues label h1:hover{
+    background: #FF807D;
+}
+.header-left .Queues .Queues-content{
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+}
+.header-left .Queues .Queues-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .Queues .Queues-content p:hover{
+    background: #FF807D;
+}
+.Queues #check2:checked ~ .Queues-content{
+    display: block;
+}
+
+.header-left .userProfile{
+    margin-bottom: 8px;
+}
+.header-left .userProfile label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .userProfile label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .userProfile label{
+    display: flex;
+    align-items: center;
+}
+.header-left .userProfile label h1:hover{
+    background: #FF807D;
+}
+.header-left .userProfile .userProfile-content{
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+}
+.header-left .userProfile .userProfile-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .userProfile .userProfile-content p:hover{
+    background: #FF807D;
+}
+.userProfile #check3:checked ~ .userProfile-content{
+    display: block;
+}
+
+.header-left .transactions{
+    margin-bottom: 20px;
+}
+.header-left .transactions label h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+    font-size: 27px;
+}
+.header-left .transactions label h1 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.header-left .transactions label{
+    display: flex;
+    align-items: center;
+}
+.header-left .transactions label h1:hover{
+    background: #FF807D;
+}
+.header-left .transactions .transactions-content{
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+}
+.header-left .transactions .transactions-content p{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-left .transactions .transactions-content p:hover{
+    background: #FF807D;
+}
+.transactions #check4:checked ~ .transactions-content{
+    display: block;
+}
+
+
+ 
+
+                                                        /* CONTENT */
+
+.content{
+  width: 85%;
+}
+
+.dashboardProducts{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+.dashboardProducts-content{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding-left: 50px;
+    background: #FF807D;
+}
+.dashboardProducts-content h1 {
+    font-weight: 400;
+}
+.dashboardProducts-content p{
+    margin-left: 1.8px;
+}
+.dashboardProducts-content span{
+    color: white;
+}
+.dashboardProducts .add-search{
+   width: 100%;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.dashboardProducts .add{
+    margin-left: 16px;
+}
+.dashboardProducts .add #add{
+    font-size: 17px;
+    padding: 4px 9px;
+}
+.dashboardProducts .search{
+    margin-right: 16px;
+    border: 1px solid black;
+    display: flex;
+    height: 27px;
+    position: relative;
+    align-items: center;
+    border-radius: 50px;
+}
+.dashboardProducts .search input{
+    height: 100%;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.dashboardProducts .search button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+}
+.dashboardProducts .add-background{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.active{
+    display: flex;
+}
+.dashboardProducts .add-background span{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.dashboardProducts .active{
+    display: flex;
+    z-index: 1;
+}
+.dashboardProducts .add-background .add-center{
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 7px;
+    background: white;
+}
+.dashboardProducts .add-background .add-center h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.dashboardProducts .add-background .add-center .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.dashboardProducts .add-background .add-center .inputs input{
+    outline: none;
+    padding: 7px;
+}
+.dashboardProducts .add-background .add-center .inputs textarea{
+    outline: none;
+    padding: 7px;
+}
+.dashboardProducts .add-background .add-center .inputs button{
+    font-size: 17px;
+    padding: 7px;
+    cursor: pointer;
+}
+.dashboardProducts table{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.dashboardProducts th, td{
+    text-align: center;
+    padding: 8px;
+}
+.dashboardProducts table, tr, th, td{
+    border: 1px solid black;
+}
+.dashboardProducts table tr td img{
+    width: 60px;
+}
+.dashboardProducts tr td .update{
+    text-decoration: none;
+    background: blue;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.dashboardProducts tr td .delete{
+    text-decoration: none;
+    background: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.dashboardProducts .success{
+    margin: 0 16px 10px 16px;
+    color: green;
+    border: 2px solid green;
+    padding: 5px;
+}
+.dashboardProducts .denied{
+    margin: 0 16px 10px 16px;
+    color: red;
+    border: 2px solid red;
+    padding: 5px;
+}
